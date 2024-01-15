@@ -12,6 +12,7 @@ local servers = {
     rust_analyzer = {},
     ruff_lsp = {},
     tsserver = {},
+    bashls = {},
 }
 
 local settings = {
