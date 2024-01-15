@@ -1,7 +1,3 @@
-local on_attach = function(client, bufr)
-    require("config.lsp.keymaps").on_attach(client, bufr)
-end
-
 local install_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = os.getenv("HOME") .. "/.cache/jdtls/workspaces/" .. project_name
@@ -16,6 +12,7 @@ local config_dir = install_path .. "/config_" .. OS
 local config = {
     cmd = {
         'java',
+        '-javaagent:' .. install_path .. "/lombok.jar",
         '-Declipse.application=org.eclipse.jdt.ls.core.id1',
         '-Dosgi.bundles.defaultStartLevel=4',
         '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -31,7 +28,6 @@ local config = {
         "-data",
         workspace_dir,
     },
-    on_attach = on_attach,
     root_dir = vim.fs.dirname(
         vim.fs.find({ ".gradlew", ".git", "mvnw", "pom.xml", "build.gradle" }, { upward = true })[1]
     ),
