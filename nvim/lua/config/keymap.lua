@@ -7,3 +7,4 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("n", "<leader>pv", ":Ex<CR>", nil)
+map("n", "<C-s>", ":w<CR>", nil)

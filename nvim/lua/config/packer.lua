@@ -42,4 +42,29 @@ return packer.startup(function(use)
         requires = 'nvim-lua/plenary.nvim',
     }
 
+    use {
+        "hrsh7th/nvim-cmp",
+        -- event = 'InsertEnter',
+        requires = {
+            "hrsh7th/cmp-nvim-lsp",
+            "onsails/lspkind-nvim",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-omni",
+            "hrsh7th/cmp-emoji",
+            "quangnguyen30192/cmp-nvim-ultisnips",
+            "sirver/ultisnips",
+        }
+    }
+
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+        "jose-elias-alvarez/null-ls.nvim",
+        "folke/neodev.nvim"
+    }
+
+    use "mfussenegger/nvim-jdtls"
+
 end)
