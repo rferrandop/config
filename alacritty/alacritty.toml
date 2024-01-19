@@ -1,4 +1,4 @@
-import = ["/Users/raulferrandopla/.config/alacritty/themes/gruvbox-dark.toml"]
+import = ["~/.config/alacritty/themes/kanagawa.toml"]
 
 [font]
 size = 14.0

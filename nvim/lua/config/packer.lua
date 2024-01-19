@@ -31,7 +31,7 @@ return packer.startup(function(use)
     }
     use 'nvim-treesitter/nvim-treesitter-context'
 
-    use { "ellisonleao/gruvbox.nvim" }
+    use 'rebelot/kanagawa.nvim'
 
     use { "lewis6991/gitsigns.nvim" }
 
