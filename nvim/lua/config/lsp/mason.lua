@@ -13,6 +13,7 @@ local servers = {
     ruff_lsp = {},
     tsserver = {},
     bashls = {},
+    sqls = {},
 }
 
 local settings = {
