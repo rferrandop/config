@@ -67,4 +67,14 @@ return packer.startup(function(use)
 
     use "mfussenegger/nvim-jdtls"
 
+    use {
+        "nvim-telescope/telescope.nvim",
+        requires = {
+            {'nvim-lua/popup.nvim'},
+            {'nvim-lua/plenary.nvim'},
+            {'nvim-telescope/telescope-fzf-native.nvim', run="make"},
+            {'nvim-telescope/telescope-symbols.nvim'},
+        }
+    }
+
 end)
