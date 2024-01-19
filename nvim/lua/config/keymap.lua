@@ -18,3 +18,8 @@ map("n", "<leader>b", ":Telescope buffers<CR>", nil)
 map("n", "<leader>`", ":Telescope project<CR>", nil)
 map("n", "<leader>t", ":Telescope<CR>", nil)
 map("n", "<leader>c", ":Telescope commands<CR>", nil)
+
+map("n", "<C-l>", '<C-w>l', nil)
+map("n", "<C-h>", '<C-w>h', nil)
+map("n", "<C-j>", '<C-w>j', nil)
+map("n", "<C-k>", '<C-w>k', nil)
