@@ -39,9 +39,6 @@ require('gitsigns').setup {
   yadm = {
     enable = false
   },
-}
-
-require('gitsigns').setup{
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 

@@ -22,7 +22,7 @@ local config = {
         '--add-modules=ALL-SYSTEM',
         '--add-opens', 'java.base/java.util=ALL-UNNAMED',
         '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-        '-jar', install_path .. "/plugins/org.eclipse.equinox.launcher_1.6.600.v20231106-1826.jar",
+        '-jar', install_path .. "/plugins/org.eclipse.equinox.launcher_1.6.700.v20231214-2017.jar",
         "-configuration",
         config_dir,
         "-data",

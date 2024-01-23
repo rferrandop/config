@@ -31,11 +31,13 @@ return packer.startup(function(use)
     }
     use 'nvim-treesitter/nvim-treesitter-context'
 
-    use 'rebelot/kanagawa.nvim'
+    use "folke/tokyonight.nvim"
 
     use { "lewis6991/gitsigns.nvim" }
 
-    use { "nvim-lualine/lualine.nvim" }
+    use {
+        "nvim-lualine/lualine.nvim",
+    }
 
     use {
         'ruifm/gitlinker.nvim',
@@ -43,26 +45,26 @@ return packer.startup(function(use)
     }
 
     use {
-        "hrsh7th/nvim-cmp",
-        -- event = 'InsertEnter',
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
         requires = {
-            "hrsh7th/cmp-nvim-lsp",
-            "onsails/lspkind-nvim",
-            "hrsh7th/cmp-path",
-            "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-omni",
-            "hrsh7th/cmp-emoji",
-            "quangnguyen30192/cmp-nvim-ultisnips",
-            "sirver/ultisnips",
-        }
-    }
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
-    use {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig",
-        "jose-elias-alvarez/null-ls.nvim",
-        "folke/neodev.nvim"
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'saadparwaiz1/cmp_luasnip'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lua'},
+
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},
+            {'rafamadriz/friendly-snippets'},
+        }
     }
 
     use "mfussenegger/nvim-jdtls"
@@ -76,5 +78,7 @@ return packer.startup(function(use)
             {'nvim-telescope/telescope-symbols.nvim'},
         }
     }
+
+    use 'ThePrimeagen/harpoon'
 
 end)
