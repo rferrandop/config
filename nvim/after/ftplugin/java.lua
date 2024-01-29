@@ -43,13 +43,23 @@ local config = {
                 downloadSources = true,
             },
             saveActions = {
-                organizeImports = true,
+                organizeImports = false,
             },
             sources = {
                 organizeImports = {
                     starThreshold = 9999;
                     staticStarThreshold = 9999;
                 },
+            },
+            autobuild = {
+                enabled = true
+            },
+            format = {
+                enabled = true,
+                settings = {
+                    url = vim.fn.stdpath('config') .. "/data/formatters/intellij-palantir.xml",
+                    profile = "Palantir"
+                }
             }
         }
     },
