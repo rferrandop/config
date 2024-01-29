@@ -34,4 +34,4 @@ vim.opt.cmdheight = 1
 -- delays and poor user experience.
 vim.opt.updatetime = 50
 
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
