@@ -8,6 +8,9 @@ hide_edge_borders none
 # Start Terminal
 bindsym $mod+Return exec alacritty
 
+# Start Neovide
+bindsym $mod+n exec neovide
+
 # Kill focused window
 bindsym $mod+q kill
 
