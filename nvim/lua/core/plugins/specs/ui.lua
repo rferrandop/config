@@ -21,5 +21,18 @@ return {
                 }
             }
         end
+    },
+    {
+        "folke/noice.nvim",
+        dependencies = {
+            "MunifTanjim/nui.nvim"
+        },
+        event = { "VeryLazy" },
+        opts = {
+            presets = {
+                bottom_search = true,
+                command_palette = true,
+            }
+        },
     }
 }
