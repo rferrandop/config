@@ -14,3 +14,8 @@ map("n", "<C-l>", '<C-w>l', nil)
 map("n", "<C-h>", '<C-w>h', nil)
 map("n", "<C-j>", '<C-w>j', nil)
 map("n", "<C-k>", '<C-w>k', nil)
+
+-- Telescope
+map("n", "<leader>pf", ':lua require("telescope.builtin").find_files({ hidden = true })<CR>', nil)
+map("n", "<leader>ff", ':lua require("telescope.builtin").git_files({ hidden = true })<CR>', nil)
+map("n", "<leader>pg", ':lua require("telescope.builtin").live_grep()<CR>', nil)
