@@ -86,6 +86,7 @@ assign [class="firefox"] $ws2
 assign [class="Alacritty"] $ws1
 assign [class="Telegram"] $ws7
 assign [class="Discord"] $ws7
+for_window [title="geo_em.d01.nc"] floating enable
 
 mode "resize" {
     bindsym h resize shrink width 5 px 
